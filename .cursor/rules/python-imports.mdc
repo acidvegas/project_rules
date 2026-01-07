@@ -1,0 +1,54 @@
+---
+description: "Python import organization and structuring standards"
+alwaysApply: true
+---
+
+Prefer standard Python libraries before PyPI libraries.
+
+Imports always belong at the top, never in the middle of code *(exception made for imports inside of `if __name__ == '__main__:')*
+
+Avoid using the `requests` library if possible in favor of `aiohttp` or `urllib.request`.
+
+
+## Import Order
+
+Imports are done in 3 categories: **Standard Library** → **PyPI Libraries** → **Local Project Imports**
+
+- Each category is separated by a blank line, with 2 blank lines after the last import.
+- All imports within each section are in ABC order
+	- When using `from x import y, z`, the imported items *(y, z)* are also in ABC order
+
+### 1. Standard Library
+
+Direct imports first, then a blank line, then `from x import y` imports:
+
+```python
+import random
+import sys
+import time
+
+from datetime import datetime, timezone
+```
+
+### 2. PyPI Libraries
+
+All PyPI imports must use the try/except format:
+
+```python
+try:
+	import aiohttp
+except ImportError:
+	raise ImportError('missing aiohttp library (pip install aiohttp)')
+
+try:
+	import requests
+except ImportError:
+	raise ImportError('missing requests library (pip install requests)')
+```
+
+### 3. Local Project Imports
+
+```python
+from core  import config, ftp, irc, utils
+from debug import get_ip, logger
+```

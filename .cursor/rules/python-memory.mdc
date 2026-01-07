@@ -1,0 +1,15 @@
+---
+description: "Memory-safe data handling standards for Python applications"
+alwaysApply: true
+---
+
+## Memory-Safe Data Handling
+
+When reading large files or fetching large amounts of data *(files, URLs, streams)*, process incrementally to avoid high memory usage:
+
+- `yield` or async generators
+- Read line by line or in chunks
+
+Storing a massive amount of data in variables can yield high memory usage which may be avoidable in certain situations.
+
+Apply only when applicable *(don't overcomplicate small data handling)*.

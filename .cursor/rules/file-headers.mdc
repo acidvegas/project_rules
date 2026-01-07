@@ -1,0 +1,25 @@
+---
+description: "File header standards including shebangs and project credits"
+alwaysApply: true
+---
+
+## Use proper shebangs:
+
+| Language | Shebang                  |
+| -------- | ------------------------ |
+| Bash     | `#!/usr/bin/env bash`    |
+| Python   | `#!/usr/bin/env python3` |
+
+
+## Project name, credits, & file reference:
+
+Any text-based file that supports comments must include the following header comments at the top:
+
+```
+# Project Name Here - Developed by acidvegas in Python (https://git.acid.vegas)
+# project_dir_name/filename.ext
+```
+
+This is placed immediately after the shebang, if one exists.
+
+Use language specific comment prefixes if applicable like how `C` programming uses `//` for comments.

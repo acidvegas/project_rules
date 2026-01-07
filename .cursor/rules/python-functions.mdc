@@ -1,0 +1,42 @@
+---
+description: "Python function naming, structure, and documentation standards"
+alwaysApply: true
+---
+
+## Function Conventions
+
+- All functions should be in ABC order, seperated by 2 blank lines.
+- Use `snake_case` for functions & use `PascalCase` for classes.
+
+
+## Type Hints
+
+- Use type hints on all function arguments & return *(`def example(name: str) -> bool:`)*
+- **Never** use `-> None:` as a return hint.
+- Do not use `from typing import ...`, it makes type hints & return hints looks hideous.
+
+
+## Docstrings
+
+All functions should have a docstring matching the formats below:
+
+###### Functions with arguments:
+
+```python
+def example_function(name: str, age: int) -> bool:
+	'''
+	This is a short & simple to the point description of the function.
+	
+	:param name: This is a small description of the name argument
+	:param age: This is a small description of the age argument
+	'''
+```
+
+###### Functions without arguments:
+
+```python
+def simple_function():
+	'''This is a short & simple to the point description of the function.```
+```
+
+- 1 blank line after a functions docstring line.

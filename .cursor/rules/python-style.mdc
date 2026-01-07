@@ -1,0 +1,22 @@
+---
+description: "Python code alignment and styling standards"
+alwaysApply: true
+---
+
+- Use tabs for indentation, not spaces.
+
+- Always preffer using single quotes & not double quotes.
+
+- Vertically align assignments, dicts, parameters, comments, etc for readability, example:
+
+```python
+self.chunk_max  = args.chunk_max * 1024 * 1024 # MB
+self.chunk_size = args.chunk_size
+self.es_index   = args.index
+```
+
+- Use `_` inside of large integers *(`250_000` instead of `250000`)* for readability.
+
+- Inline comments should only have a single space before the `#`, unless vertically aligning.
+
+- Always use 3 blank lines before `if __name__ == '__main__'.

@@ -1,0 +1,49 @@
+---
+description: "Project directory structures and file organization standards"
+alwaysApply: true
+---
+
+## Example project directory tree:
+
+```
+company_project_scraper/
+	.env
+	.env.example
+	.gitignore
+	assets/
+		company_metadata.json
+		employees.sql
+	core/
+		config.py
+		ftp.py
+		irc.py
+		events.py
+		utils.py
+	logs/
+		projectname_yyyy-mm-dd.log
+	Dockerfile
+	LICENSE
+	main.py
+	requirements.txt
+	README.md
+	setup.sh
+	test.py
+```
+
+Not all of these files are required for every project, this is just an example as guidance.
+
+#### Files descriptions:
+
+- `.env` — secret environment variables, keep out of version control
+- `.env.example` — template showing all required environment variables  
+- `.gitignore` — files & directories to exclude from Git  
+- `assets/` — static or downloaded data, e.g., CSVs, JSONs, SQL files; can be gitignored if large or generated locally  
+- `core/` — reusable Python modules *(config, FTP, IRC, events, utility functions)*  
+- `logs/` — application log files, typically dated  
+- `Dockerfile` — container setup instructions  
+- `LICENSE` — project license  
+- `main.py` — main script that runs the project  
+- `requirements.txt` — Python dependencies  
+- `README.md` — project overview & instructions  
+- `setup.sh` — setup script for OS packages, pip dependencies, Docker, etc.
+- `test.py`— Unit testing or proof of example script to validate functionality where needed.

@@ -1,0 +1,12 @@
+---
+description: "Gitignore standards for excluding sensitive and generated files from version control"
+alwaysApply: true
+---
+
+## Example of files to ignore:
+
+- Sensitive settings or keys: `.env`
+- Logs or temporary files: `logs/`
+- Python cache: `__pycache__/`
+
+Only include what is truly needed to be excluded from version control so we can keep secrets, logs, & auto-generated files out of Git.

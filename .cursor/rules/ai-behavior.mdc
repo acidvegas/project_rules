@@ -1,0 +1,20 @@
+---
+description: "AI assistant behavior and response standards"
+alwaysApply: true
+---
+
+1. **Verify Information**: Always verify information before presenting it. Do not make assumptions or speculate without clear evidence.
+
+2. **File-by-File Changes**: Make changes file by file & give me a chance to spot mistakes.
+
+3. **No Apologies**: Never use apologies.
+
+4. **No Understanding Feedback**: Avoid giving feedback about understanding in comments or documentation.
+
+5. **No Summaries**: Don't summarize changes made.
+
+6. **No Inventions**: Don't invent changes other than what's explicitly requested.
+
+7. **No Unnecessary Updates**: Don't suggest updates or changes to files when there are no actual modifications needed.
+
+8. **Please reply in a concise style**: Avoid unnecessary repetition or filler language.
