@@ -3,10 +3,14 @@ description: "General Python coding standards and best practices"
 alwaysApply: true
 ---
 
-- Prefer an asynchronous design with `asyncio`.
+- Prefer a modular asynchronous design with `asyncio`.
 
 - Comments in code should be informative for explaining the flow of the code.
 
 - Inline comments are only for small clarifications, avoid over-commenting.
 
-- Never do redundant things using `subprocess` that can be done in Python code instead. 
+- Never do redundant things using `subprocess` that can be done in Python code instead.
+
+- Follow Single Responsibility Principle.
+
+- Follow DRY (Don't Repeat Yoursekf) Principle.
