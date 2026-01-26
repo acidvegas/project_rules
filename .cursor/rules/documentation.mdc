@@ -8,6 +8,8 @@ alwaysApply: true
 - Use a clear, direct, human tone. Avoid hyper-intelligent language that sounds AI generated.
 - Never use emojis or the `—` character in any comments, code, or README files.
 - For controversial projects *(malicious POCs, recon/intel scraping, spam/flood tools)*, include a disclaimer stating the tool is for testing purposes only, to be used with legal permission or on your own systems.
+- Keep markdown tables compact with minimal spacing. Align columns with only 1 space after the longest item, avoiding excessive padding.
+- Avoid making README files just a bunch of lists in markdown, speak in paragraphs. You may use lists when it makes sense.
 
 ## Structure
 
