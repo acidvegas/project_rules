@@ -14,6 +14,7 @@ self.chunk_max  = args.chunk_max * 1024 * 1024 # MB
 self.chunk_size = args.chunk_size
 self.es_index   = args.index
 ```
+
 **Note:** Align columns with only 1 space after the longest item, avoiding excessive padding.
 
 - Use `_` inside of large integers *(`250_000` instead of `250000`)* for readability.
